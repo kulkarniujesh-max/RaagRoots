@@ -1,4 +1,4 @@
-# RagRoots storefront prototype
+# RaagRoots storefront prototype
 
 A responsive, browser-only storefront prototype for handcrafted Indian musical instruments. The catalog, product options, cart, and demo checkout are sample content; no payment or personal details are collected.
 
