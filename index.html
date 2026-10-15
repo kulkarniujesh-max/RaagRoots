@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff8ed" />
+  <meta name="description" content="Discover handcrafted Indian musical instruments from the makers who know them best." />
+  <title>RagRoots — instruments with a story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-spark">✦</span> Made by hand in India <span class="announcement-dot">·</span> shipped with care, worldwide <span class="announcement-spark">✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="RagRoots home">
+      <span class="brand-symbol" aria-hidden="true"></span>
+      <span class="brand-word">Rag<span>Roots</span><small>CRAFTED IN INDIA · HEARD EVERYWHERE</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="./" class="nav-link active">Shop all</a>
+      <a href="#story" class="nav-link">Our makers</a>
+      <a href="#promise" class="nav-link">Why RagRoots</a>
+    </nav>
+    <div class="header-actions">
+      <label class="search-box" for="catalog-search"><span aria-hidden="true">⌕</span><input id="catalog-search" type="search" placeholder="Find your sound…" autocomplete="off" /><kbd>Ctrl K</kbd></label>
+      <button class="cart-button" id="cart-open" aria-label="Open shopping bag"><span class="bag-icon" aria-hidden="true"></span><span class="cart-label">Bag</span><span id="cart-count" class="cart-count">0</span></button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="site-footer" id="story">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="brand brand-footer" href="./"><span class="brand-symbol" aria-hidden="true"></span><span class="brand-word">Rag<span>Roots</span><small>CRAFTED IN INDIA · HEARD EVERYWHERE</small></span></a><p>Rooted in tradition. Made for your music.</p></div>
+      <div class="footer-note"><span class="eyebrow">THE RAGROOTS PROMISE</span><p>We bring you closer to the people and traditions behind every instrument.</p></div>
+      <div class="footer-links"><a href="#promise">Our promise</a><a href="mailto:hello@ragroots.example">Say hello ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 RagRoots · A prototype storefront</span><span>Small batches. Big sound. <span class="footer-star">✳</span></span></div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping bag">
+    <div class="drawer-head"><div><span class="eyebrow">YOUR BAG</span><h2>Your instruments</h2></div><button id="cart-close" class="icon-button" aria-label="Close shopping bag">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span class="empty-icon">♪</span><h3>Your next sound is out there</h3><p>Explore instruments made by hand and find the one that feels like you.</p><button class="button button-dark" id="continue-shopping">Explore instruments <span>↗</span></button></div>
+    <div class="cart-summary" id="cart-summary" hidden><div class="summary-line"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div><p>Shipping and any custom requirements are confirmed with the maker.</p><button class="button button-primary" id="checkout">Continue to demo checkout <span>→</span></button><span class="demo-note">Prototype only — no payment or personal details collected.</span></div>
+    <div class="checkout-success" id="checkout-success" hidden><span class="success-mark">✓</span><span class="eyebrow">ORDER PREVIEW</span><h3>Your next chapter sounds good.</h3><p>Your demo order is confirmed. In a real RagRoots store, the maker would reach out with the next steps.</p><button class="button button-dark" id="success-done">Back to the shop <span>↗</span></button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
+
