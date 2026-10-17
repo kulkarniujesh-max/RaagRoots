@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff8ed" />
+  <meta name="description" content="Meet the student team behind RaagRoots, a project celebrating Indian musical instruments and the stories behind them." />
+  <title>About Us — RaagRoots</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{--ink:#25242a;--muted:#77747d;--paper:#fffdf9;--cream:#f8eedf;--line:#eae2d7;--orange:#e45c32;--plum:#55304b;--green:#3a6550}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}
+    .announcement{height:34px;display:flex;align-items:center;justify-content:center;gap:10px;background:#402a2d;color:#fff7e9;font-size:11px;letter-spacing:.06em}.announcement b{color:#ffd073}
+    .site-header{height:84px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(22px,5vw,76px);gap:24px;background:rgba(255,253,249,.95);border-bottom:1px solid rgba(234,226,215,.75);position:sticky;top:0;z-index:10;backdrop-filter:blur(15px)}
+    .brand{display:flex;align-items:center;gap:8px}.brand-symbol{width:38px;height:43px;display:block;object-fit:contain}.brand-word{font:700 24px/1 'Playfair Display',serif;letter-spacing:-.8px;color:#372824;white-space:nowrap}.brand-word span{color:var(--orange)}.brand-word small{display:block;font:700 7px/1.5 'DM Sans',sans-serif;letter-spacing:1.25px;color:#9b8579;margin-top:4px}
+    nav{display:flex;gap:30px;align-items:center}nav a{font-size:13px;font-weight:600;color:#716c6b}nav a:hover,nav a.active{color:var(--orange)}.nav-cta{background:#342a2b;color:#fff;padding:12px 17px;border-radius:99px}
+    .hero{position:relative;overflow:hidden;background:var(--cream);padding:clamp(60px,9vw,112px) clamp(24px,9vw,130px) 86px;min-height:390px}.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(228,92,50,.16);border-radius:50%;pointer-events:none}.hero:before{width:360px;height:360px;right:7%;top:-120px}.hero:after{width:250px;height:250px;right:12%;top:-65px}
+    .hero-inner{max-width:1100px;margin:auto;position:relative;z-index:1}.eyebrow{font-size:10px;font-weight:800;letter-spacing:1.8px;color:var(--orange);text-transform:uppercase}.hero h1{font:700 clamp(43px,7vw,78px)/1.02 'Playfair Display',serif;letter-spacing:-2px;max-width:780px;margin:19px 0}.hero h1 em{color:var(--orange);font-weight:600}.hero p{max-width:590px;color:#716860;font-size:15px;line-height:1.85;margin:0}.hero-mark{position:absolute;right:11%;bottom:35px;font:700 100px 'Playfair Display',serif;color:rgba(228,92,50,.18);transform:rotate(-12deg)}
+    .intro{max-width:1100px;margin:auto;padding:70px 24px 25px;display:grid;grid-template-columns:.75fr 1.25fr;gap:60px;align-items:start}.intro h2{font:700 34px/1.13 'Playfair Display',serif;letter-spacing:-.7px;margin:9px 0}.intro p{font-size:13px;line-height:1.9;color:var(--muted);margin:0}
+    .team{max-width:1100px;margin:auto;padding:35px 24px 90px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}.section-head h2{font:700 clamp(30px,4vw,42px)/1.1 'Playfair Display',serif;letter-spacing:-.8px;margin:8px 0 0}.section-head p{font-size:12px;color:var(--muted);margin:0 0 3px}
+    .team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.member{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px;min-height:250px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}.member:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(50,36,24,.09)}.member:after{content:"♪";position:absolute;right:15px;top:5px;font:700 75px 'Playfair Display',serif;color:#f8eee4}.avatar{height:57px;width:57px;border-radius:50%;display:grid;place-items:center;background:#f8e5d5;color:#a84a2c;font:700 21px 'Playfair Display',serif;position:relative;z-index:1}.member:nth-child(2) .avatar{background:#f4e8c9;color:#8a6a25}.member:nth-child(3) .avatar{background:#e2ece2;color:#3a6550}.member h3{font:700 23px 'Playfair Display',serif;margin:23px 0 8px;position:relative;z-index:1}.member .role{font-size:10px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;color:var(--orange)}.roll{margin-top:17px;padding-top:13px;border-top:1px solid #f0e9e2;font-size:11px;color:#8b8179}.roll strong{display:block;color:var(--ink);font-size:13px;letter-spacing:.35px;margin-top:5px}
+    .closing{margin:0 clamp(18px,5vw,76px) 65px;background:#402a2d;color:#fff7e9;border-radius:22px;padding:36px clamp(24px,5vw,60px);display:flex;align-items:center;justify-content:space-between;gap:25px}.closing h2{font:700 clamp(25px,3.5vw,36px)/1.15 'Playfair Display',serif;margin:8px 0}.closing p{color:#d8c5b9;font-size:12px;line-height:1.7;margin:0;max-width:530px}.closing a{flex:none;background:#f4a06e;color:#342a2b;border-radius:99px;padding:14px 19px;font-size:12px;font-weight:800}
+    footer{background:#392b2d;color:#fff5e8;padding:23px clamp(22px,7vw,104px);display:flex;justify-content:space-between;gap:15px;font-size:10px;color:#bda99e}footer a{color:#f4c2a4}
+    @media(max-width:700px){.site-header{height:70px;padding:0 17px}.brand-symbol{width:31px;height:35px}.brand-word{font-size:21px}.brand-word small{font-size:5px;letter-spacing:.8px}nav{gap:14px}nav a{font-size:11px}nav .hide-mobile{display:none}.hero{padding:58px 24px 70px;min-height:0}.hero h1{font-size:47px}.hero p{font-size:13px}.hero-mark{right:5%;bottom:8px;font-size:68px}.intro{grid-template-columns:1fr;gap:15px;padding-top:45px}.intro h2{font-size:30px}.team{padding-top:28px;padding-bottom:55px}.section-head{align-items:start;flex-direction:column;gap:8px}.team-grid{grid-template-columns:1fr}.member{min-height:220px}.closing{align-items:flex-start;flex-direction:column;margin-bottom:40px}.closing a{margin-top:3px}footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="announcement"><b>✦</b> Made by hand in India <span>·</span> celebrating the sounds of tradition <b>✦</b></div>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="RaagRoots home">
+      <img class="brand-symbol" src="./assets/logo-mark.png" alt="" />
+      <span class="brand-word">Raag<span>Roots</span><small>CRAFTED IN INDIA · HEARD EVERYWHERE</small></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="./">Shop all</a>
+      <a href="./#story" class="hide-mobile">Our makers</a>
+      <a href="./about.html" class="active">About us</a>
+      <a href="./" class="nav-cta">Explore instruments ↗</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="eyebrow">THE PEOPLE BEHIND RAAGROOTS</span>
+        <h1>Three minds.<br />One love for <em>Indian music.</em></h1>
+        <p>RaagRoots is our project celebrating the instruments, craftsmanship, and musical traditions that make India's sound so distinctive. We're bringing these instruments into one welcoming space where every sound has a story.</p>
+      </div>
+      <div class="hero-mark" aria-hidden="true">♫</div>
+    </section>
+    <section class="intro">
+      <div><span class="eyebrow">OUR PURPOSE</span><h2>Rooted in tradition.<br />Made for discovery.</h2></div>
+      <p>We created RaagRoots to make exploring Indian musical instruments feel simple, inspiring, and accessible. From familiar favourites to instruments you may be discovering for the first time, our goal is to help people connect with the sound, heritage, and artistry behind each one. This website is a student project built through teamwork, creativity, and a shared appreciation for music.</p>
+    </section>
+    <section class="team">
+      <div class="section-head"><div><span class="eyebrow">MEET THE TEAM</span><h2>The people behind the project</h2></div><p>Three teammates, working toward one idea.</p></div>
+      <div class="team-grid">
+        <article class="member"><div class="avatar" aria-hidden="true">UK</div><span class="role">Project team</span><h3>Ujesh Kulkarni</h3><div class="roll">Roll number<strong>VU2F2526081</strong></div></article>
+        <article class="member"><div class="avatar" aria-hidden="true">SS</div><span class="role">Project team</span><h3>Sejal Sonawane</h3><div class="roll">Roll number<strong>VU2F2526067</strong></div></article>
+        <article class="member"><div class="avatar" aria-hidden="true">SS</div><span class="role">Project team</span><h3>Sharifa Shaikh</h3><div class="roll">Roll number<strong>VU2F2526060</strong></div></article>
+      </div>
+    </section>
+    <section class="closing"><div><span class="eyebrow">FIND YOUR SOUND</span><h2>Every instrument has a story.</h2><p>Explore the collection and discover the sounds, shapes, and traditions that inspire RaagRoots.</p></div><a href="./">Explore the collection ↗</a></section>
+  </main>
+  <footer><span>© 2026 RaagRoots · Student project</span><a href="./">Back to the shop ↗</a></footer>
+</body>
+</html>
